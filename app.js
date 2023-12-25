@@ -1,9 +1,6 @@
-const player = {
-  name: "seojin",
-  age: 17,
-  gender: "M",
-};
+function sayHello() {
+  console.log("Hello my name is B");
+}
 
-console.log(player);
-player.age += 20;
-console.log(player.age);
+sayHello();
+sayHello("Seojin");
