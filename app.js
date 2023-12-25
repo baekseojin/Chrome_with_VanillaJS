@@ -1,15 +1,9 @@
-const dayOfWeek = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday",
-];
+const player = {
+  name: "seojin",
+  age: 17,
+  gender: "M",
+};
 
-console.log(dayOfWeek[2]);
-
-dayOfWeek.push("Seojinday");
-
-console.log(dayOfWeek[7]);
+console.log(player);
+player.age += 20;
+console.log(player.age);
