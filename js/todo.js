@@ -2,10 +2,12 @@ const todoForm = document.getElementById("todo-form");
 const todoInput = todoForm.querySelector("input");
 const todoList = document.getElementById("todo-list");
 
+const TODOS_KET = "todos";
+
 const toDos = [];
 
 function saveToDos() {
-  localStorage.setItem("todos", JSON.stringify(toDos));
+  localStorage.setItem(TODOS_KET, JSON.stringify(toDos));
 }
 
 function deleteToDo(event) {
@@ -35,3 +37,13 @@ function handleToDoSubmit(event) {
 }
 
 todoForm.addEventListener("submit", handleToDoSubmit);
+
+const saveToDos = localStorage.getItem(TODOS_KET);
+
+if (savedToDos !== null) {
+  const parsedToDos = JSON.parse(saveToDos);
+  parsedToDos.array.forEach(
+    (item) => console.log("this is the turn of "),
+    item
+  );
+}
